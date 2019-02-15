@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:XamarinLocalization" 
+    x:Class="XamarinLocalization.MainPage">
+    
+    <StackLayout>
+        <Picker x:Name="languageSelectorPicker"
+                Title="Language"
+                ItemsSource="{Binding Languages}"
+                SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" />
+        <Label x:Name="loveLabel"
+               Text="" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" />
+        <Image Source=""
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand"
+               Aspect="AspectFit" />
+    </StackLayout>
+</ContentPage>
