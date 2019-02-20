@@ -1,7 +1,7 @@
-﻿using System;
-using System.Globalization;
+﻿using XamarinLocalization.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinLocalization.Services;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XamarinLocalization
@@ -10,9 +10,17 @@ namespace XamarinLocalization
     {
         public App()
         {
+            InitLocalization();
             InitializeComponent();
 
             MainPage = new MainPage();
+        }
+
+        private void InitLocalization()
+        {
+            var ci = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
+            AppResources.Culture = ci; // set the RESX for resource localization
+            DependencyService.Get<ILocalizeService>().SetLocale(ci); // set the Thread for locale-aware methods
         }
 
         protected override void OnStart()
