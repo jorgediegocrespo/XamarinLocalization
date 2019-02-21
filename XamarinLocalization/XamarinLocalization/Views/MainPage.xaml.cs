@@ -8,6 +8,8 @@ namespace XamarinLocalization.Views
         {
             InitializeComponent();
             BindingContext = this;
+
+            loveLabel.Text = AppResources.love;
         }
     }
 }

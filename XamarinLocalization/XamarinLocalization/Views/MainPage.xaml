@@ -11,9 +11,9 @@
                Text="{translate:Translate love}" 
                HorizontalOptions="Center" 
                VerticalOptions="CenterAndExpand" />
-        <Image Source=""
+        <Image Source="heart.png"
                HorizontalOptions="Center" 
-               VerticalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"
                Aspect="AspectFit" />
     </StackLayout>
 </ContentPage>

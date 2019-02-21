@@ -19,8 +19,8 @@ namespace XamarinLocalization
         private void InitLocalization()
         {
             var ci = DependencyService.Get<ILocalizeService>().GetCurrentCultureInfo();
-            AppResources.Culture = ci; // set the RESX for resource localization
-            DependencyService.Get<ILocalizeService>().SetLocale(ci); // set the Thread for locale-aware methods
+            AppResources.Culture = ci;
+            DependencyService.Get<ILocalizeService>().SetLocale(ci);
         }
 
         protected override void OnStart()
