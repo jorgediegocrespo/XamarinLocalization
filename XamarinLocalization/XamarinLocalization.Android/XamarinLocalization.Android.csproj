@@ -83,14 +83,10 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
-    <AndroidResource Include="Resources\mipmap-es-hdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-fr-hdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-pt-rBR-hdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-mdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-xhdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-xxhdpi\heart.png" />
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\heart.png" />
+    <AndroidResource Include="Resources\drawable-pt-rBR\heart.png" />
+    <AndroidResource Include="Resources\drawable\heart.png" />
+    <AndroidResource Include="Resources\drawable-es\heart.png" />
+    <AndroidResource Include="Resources\drawable-fr\heart.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -99,9 +95,9 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
     <Folder Include="Services\" />
     <Folder Include="Services\LocalizeService\" />
-    <Folder Include="Resources\mipmap-es-hdpi\" />
-    <Folder Include="Resources\mipmap-fr-hdpi\" />
-    <Folder Include="Resources\mipmap-pt-rBR-hdpi\" />
+    <Folder Include="Resources\drawable-es\" />
+    <Folder Include="Resources\drawable-fr\" />
+    <Folder Include="Resources\drawable-pt-rBR\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinLocalization\XamarinLocalization.csproj">
